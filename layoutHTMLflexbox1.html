@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>layoutFlexboxChange</title>
+    <style>
+      *{
+        margin: 0px;
+      }
+      .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background: deepskyblue;
+      }
+
+      .navigation p {
+        margin: 0;
+        padding: 15px;
+        color: white;
+        cursor: pointer;
+      }
+
+      .navigation p:hover {
+        background: #1565c0;
+      }
+
+      @media (max-width: 768px) {
+        .navigation {
+          flex-direction: column;
+          justify-content: flex-start;
+          width: 20vw;
+          height: 100vh;
+        }
+
+        .navigation p {
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navigation">
+      <p>Home</p>
+      <p>About</p>
+      <p>Products</p>
+      <p>Contact</p>
+    </div>
+  </body>
+</html>
